@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head id="Head1">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>
+
+</title></head>
+<body>
+    <form method="post" action="./ClientStorageProxy.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE2MTY2ODcyMjlkZIcrpKb1iVEpC3GW2kaLEhaIYIht">
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="2F041953">
+</div>
+        <script type="text/javascript">
+            function receiveMessage(e) 
+            {
+                var requestObject = tryParseJSON(unescape(e.data));
+
+                if (!requestObject || !requestObject.Mode) {
+                    return;
+                }
+
+                try
+                {
+                    if (requestObject.Mode === 'Get') 
+                    {
+                        GetData(requestObject, e);
+                    }
+                    else if (requestObject.Mode === "Save")
+                    {
+                        SaveData(requestObject);
+                    }
+                    else if (requestObject.Mode === "Remove")
+                    {
+                        RemoveData(requestObject);
+                    }
+                }
+                catch (err) 
+                {
+                    ConsoleLog(err.message);
+                }
+            }
+
+            function tryParseJSON(jsonString) {
+                try {
+                    var o = JSON.parse(jsonString);
+
+                    // Handle non-exception-throwing cases:
+                    // Neither JSON.parse(false) or JSON.parse(1234) throw errors, hence the type-checking,
+                    // but... JSON.parse(null) returns 'null', and typeof null === "object", 
+                    // so we must check for that, too.
+                    if (o && typeof o === "object" && o !== null) {
+                        return o;
+                    }
+                }
+                catch (e) { }
+
+                return false;
+            };
+
+            function GetData(requestObject, originMessage)
+            {
+                var storage = (requestObject.Storage === 'local') ? window.localStorage : window.sessionStorage;
+
+                var data = storage.getItem(requestObject.ObjectName);
+                var returnObject = {};
+                returnObject.ObjectName = requestObject.ObjectName;
+                returnObject.Data = data;
+                returnObject = JSON.stringify(returnObject);
+                originMessage.source.postMessage(returnObject, originMessage.origin);
+            }
+
+            function SaveData(requestObject)
+            {
+                var storage = (requestObject.Storage === 'local') ? window.localStorage : window.sessionStorage;
+                storage.removeItem(requestObject.ObjectName);
+                storage.setItem(requestObject.ObjectName, requestObject.Data);
+            }
+            
+            function RemoveData(requestObject) {
+                var storage = (requestObject.Storage === 'local') ? window.localStorage : window.sessionStorage;
+                storage.removeItem(requestObject.ObjectName);
+            }
+
+            function ConsoleLog(logText) 
+            {
+                try { console.log(logText); } catch (e) { }
+            }
+
+            if (window.addEventListener) 
+            {
+                window.addEventListener("message", receiveMessage, false);
+            }
+            else if (window.attachEvent) 
+            {
+                window.attachEvent("onmessage", receiveMessage);
+            }
+        </script>
+    </form>
+
+
+</body></html>

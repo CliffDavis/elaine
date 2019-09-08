@@ -1,0 +1,27 @@
+function ClientStorageObject(options){var loaded=false;var csWindow;var csFrame;var dataCallback;
+var internalObjectName;var storageType="session";var dataProxyUrl=options.dataProxyUrl;
+function getDataCallback(objectName,callback){if(objectName){if(callback){dataCallback=callback;
+}getData(objectName);}}function getData(objectName){if(objectName){try{if(loaded){var requestObject={};
+requestObject.Mode="Get";requestObject.Storage=storageType;requestObject.ObjectName=objectName;
+internalObjectName=objectName;var requestData=JSON.stringify(requestObject);csWindow.postMessage(unescape(requestData),"*");
+}else{window.setTimeout(function(){getData(objectName);},100);}}catch(e){logToConsole("Unable to get data: ",e);
+}}}function removeData(objectName){if(objectName){try{if(loaded){var requestObject={};
+requestObject.Mode="Remove";requestObject.Storage=storageType;requestObject.ObjectName=objectName;
+var requestData=JSON.stringify(requestObject);csWindow.postMessage(unescape(requestData),"*");
+}else{window.setTimeout(function(){removeData(objectName);},100);}}catch(e){logToConsole("Unable to save data: ",e);
+}}}function saveData(objectName,saveData,retry){if(objectName){try{if(!retry){var saveRequestObject={};
+saveRequestObject.Mode="Save";saveRequestObject.Storage=storageType;saveRequestObject.ObjectName=objectName;
+saveRequestObject.Data=JSON.stringify(saveData);saveData=JSON.stringify(saveRequestObject);
+}if(loaded){csWindow.postMessage(unescape(saveData),"*");}else{window.setTimeout(function(){saveData(objectName,escape(unescape(saveData)),true);
+},100);}}catch(e){logToConsole("Unable to save data to client storage: ",e);}}}function receiveMessage(e){try{if(e.data!=undefined&&dataCallback!=undefined){var dataObject=tryParseJSON(e.data);
+if(dataObject&&dataObject.ObjectName&&dataObject.ObjectName===internalObjectName){dataCallback(dataObject.Data);
+}}}catch(e){logToConsole("Error receiving Client Storage message: ",e);}}function tryParseJSON(jsonString){try{var o=JSON.parse(jsonString);
+if(o&&typeof o==="object"&&o!==null){return o;}}catch(e){}return false;}function frameOnLoad(){loaded=true;
+csWindow=csFrame.contentWindow;}function loadComFrame(){try{if(document.body){csFrame=document.createElement("iframe");
+csFrame.setAttribute("src",dataProxyUrl);csFrame.style.cssText="position:absolute;width:1px;height:1px;left:-9999px;";
+document.body.appendChild(csFrame);if(window.addEventListener){window.addEventListener("message",receiveMessage,false);
+csFrame.addEventListener("load",frameOnLoad,false);}else{if(window.attachEvent){window.attachEvent("onmessage",receiveMessage);
+csFrame.attachEvent("onload",frameOnLoad);}}}else{window.setTimeout(function(){loadComFrame();
+},100);}}catch(e){logToConsole("Error loading Com Frame in Client Storage: ",e);}}function logToConsole(prefixMessage,e){if(console){try{console.log(prefixMessage+e.message);
+}catch(e){}}}loadComFrame();return{getDataCallback:getDataCallback,getData:getData,removeData:removeData,saveData:saveData};
+}

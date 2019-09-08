@@ -1,0 +1,1094 @@
+﻿/* Responsive AND Non-Responsive */
+#wrapper {
+  min-width: 320px !important; }
+
+#PremiumObitBody .PremiumObitHeader .PremiumObitTitleBar {
+  width: calc(100% - 40px) !important; }
+
+[data-component=viewAllMessagesLink] {
+  display: inline-block;
+  padding: 12px 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  font-family: "Open Sans"; }
+
+[data-component=viewAllMessagesLink] a {
+  color: #707070;
+  margin-top: 0px !important;
+  float: none !important; }
+
+[data-component=viewAllMessagesLink] a, [data-component=sendFlowersHeaderLink] a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 13px !important; }
+
+.displayOverlay1 {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 12px 0;
+  background: rgba(245, 245, 245, 0.9);
+  text-align: center;
+  z-index: 30;
+  box-shadow: 0 0 10px 0 rgba(0, 20, 30, 0.25); }
+
+.FixedClose {
+  z-index: 40;
+  height: 40px;
+  position: absolute;
+  right: 0px;
+  text-align: center;
+  top: 0px;
+  width: 40px; }
+
+/* Gallery overrides */
+.ImageDisplay {
+  width: auto !important;
+  max-width: 535px; }
+
+#MediaContainer iframe {
+  width: 100%; }
+
+#MediaContainer img {
+  max-width: 100%; }
+
+#ResourceAdTop {
+  padding-left: 10px;
+  padding-top: 10px; }
+
+/* View Obituaries for Today */
+.hidden {
+  display: none; }
+
+.ViewTodaysObits {
+  position: fixed;
+  bottom: 110px;
+  background: #48575e;
+  color: #fff;
+  padding: 16px;
+  font-size: 16px;
+  border-radius: 32px;
+  width: 250px;
+  text-align: center;
+  left: calc(50% - 142px);
+  box-shadow: 0 6px 12px #888888; }
+
+/* Casing Overrides */
+#PremiumObitBody.PremiumV2 .MainContentContainer .PremiumObitLayout .ServiceAndObit .PremiumObit .ObitBody .PremiumObitText .ReadMore {
+  text-transform: initial !important; }
+
+#PremiumObitBody .PremiumObitHeader .PremiumObitAdBar {
+  height: auto !important;
+  padding-top: 3px;
+  padding-bottom: 3px; }
+
+#PremiumObitBody.PremiumV2 .MediaMessage .VideoEntries .VideoEntry {
+  width: 80px;
+  margin: 10px 10px 10px 0; }
+
+/* Name Casing Overrides */
+#PremiumObitBody .MainContentContainer .PremiumObitLayout .ServiceAndObit .PremiumObit .ObitTitle .ObituaryName .upperCaseName {
+  text-transform: initial !important; }
+
+#PremiumObitBody .MainContentContainer .PremiumObitLayout .ServiceAndObit .PremiumObit .ObitBody .PremiumObitText .ObitText a {
+  word-break: break-all;
+  display: inline-flex; }
+
+/*styles for Social Reminder pop up*/
+.SocialReminderModal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.85);
+  -webkit-transition: opacity 1s ease-in;
+  transition: opacity 1s ease-in; }
+
+.SocialReminderModal.load {
+  opacity: 1; }
+
+.SocialReminderPopupWrapper {
+  position: fixed;
+  border-radius: 3px;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10000;
+  display: block;
+  background: #fff;
+  box-sizing: border-box;
+  box-shadow: 0 4px 10px 0 rgba(0, 20, 30, 0.2); }
+
+.SocialReminderModalContent {
+  text-align: center;
+  align-items: center;
+  height: 264px;
+  display: flex; }
+
+.SocialReminderHeader {
+  font-family: "Crimson Text";
+  font-size: 26px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #00141e;
+  margin: 0; }
+
+.SocialReminderShare.Facebook {
+  background: #415a93; }
+
+.SocialReminderShare {
+  color: white;
+  border: none;
+  width: 248px;
+  height: 34px;
+  font-size: 16px;
+  font-family: "Open Sans";
+  border-radius: 3px;
+  cursor: pointer;
+  text-decoration: none;
+  padding-top: 14px; }
+
+.SocialReminderShare.Email {
+  background: #000;
+  text-decoration: none; }
+  .SocialReminderShare.Email:visited {
+    text-decoration: none;
+    color: white; }
+  .SocialReminderShare.Email:hover {
+    text-decoration: none;
+    color: white; }
+
+.SocialReminderShare.Email img, .SocialReminderShare.Facebook img {
+  padding-right: 7.3px; }
+
+.SocialReminderShareWrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 278px;
+  height: 210px; }
+
+.SocialReminderClose {
+  position: fixed;
+  top: 10px;
+  right: 7px;
+  cursor: pointer; }
+
+.SocialReminderClose.NotRightNow {
+  position: relative;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #006699;
+  text-decoration: none; }
+
+/* Responsive Only */
+[data-responsive=true] {
+  /* All screen sizes */
+  /*#ctl00_MainContentPlaceholder_GuestBookControl_ViewAllPhotosLink { float: left; }*/
+  /* Loader 2 */
+  /* Mobile Portrait */
+  /* Mobile Landscape */
+  /* Tablet Landscape */
+  /* Tablet Protrait */
+  /* Mobile Landscape */ }
+  [data-responsive=true] .YearsAndNoticeTypeContainer {
+    float: none !important; }
+  [data-responsive=true] .ObitTitle {
+    height: auto !important; }
+  [data-responsive=true] #PremiumObitBody .GuestBookDiv .PhotoEntries .Last {
+    display: inline-block; }
+  [data-responsive=true] [data-component="headerLinks"] #ctl00_MainContentPlaceholder_NoticeTypeLink {
+    width: calc(50% - 40px);
+    max-width: 120px; }
+  [data-responsive=true] .ReturnToPortalLink .ShareElement {
+    margin-left: 0 !important; }
+  [data-responsive=true] .FlowersBig a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    font-size: 20px !important;
+    display: block !important;
+    line-height: 30px;
+    text-align: center; }
+  [data-responsive=true] #flower-button-2 {
+    display: inline-block;
+    vertical-align: top; }
+  [data-responsive=true] .responsiveLoadingBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    z-index: 100; }
+  [data-responsive=true] .responsiveLoadingContainer {
+    width: calc(100% - 58px);
+    max-width: 800px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 12px 12px 64px 12px;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 0 10px 20px 0 rgba(0, 20, 30, 0.2); }
+  [data-responsive=true] .responsiveLoadingDiv {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+    margin: 50px auto; }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+  [data-responsive=true] .responsiveLoadingBackground .responsiveLoadingContainer h2 {
+    font-family: OpenSans;
+    font-size: 24px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: center;
+    color: #00141e;
+    margin-bottom: 8px; }
+  [data-responsive=true] .responsiveLoadingBackground .responsiveLoadingContainer h3 {
+    opacity: 0.5;
+    font-family: OpenSans;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #00141e; }
+  @media only screen and (max-width: 480px) {
+    [data-responsive=true] {
+      /* Video Thumbnails */
+      /*.VideoEntries .ViewAllLink {
+            float: left;
+        }*/
+      /* Gallery on mobile */
+      /* end */ }
+      [data-responsive=true] a.SendFlowersHeaderLink.glyphicons:before {
+        content: "" !important; }
+      [data-responsive=true] .VideoEntries {
+        text-align: center; }
+      [data-responsive=true] .VideoEntries .VideoEntry {
+        display: inline-block;
+        float: none !important; }
+      [data-responsive=true] .GalleryViewer .MediaFrame {
+        float: none;
+        width: 100%;
+        height: auto; }
+      [data-responsive=true] .GalleryViewer .RightFrame {
+        float: none;
+        width: 100%;
+        height: auto; }
+      [data-responsive=true] .GalleryViewer .RightFrame .UploadFrame {
+        margin: 0;
+        padding-top: 15px; }
+      [data-responsive=true] .GalleryViewer .RightFrame .Resources {
+        position: relative;
+        width: 100%;
+        bottom: auto;
+        margin: 0; }
+      [data-responsive=true] .GalleryViewer .MediaFrame .ImageDisplay {
+        margin: 0; }
+      [data-responsive=true] .GalleryViewer .MediaFrame .ImageDisplay .EndOfContentFrame .CalloutText {
+        width: 100%; }
+      [data-responsive=true] .GalleryViewer .HeaderBar .LastTab {
+        display: none; }
+      [data-responsive=true] .GalleryViewer .MediaFrame .ImageDisplay .EntryCaption {
+        max-width: calc(100% - 20px); }
+      [data-responsive=true] #PremiumObitBody .PremiumObitHeader .PremiumObitAdBar .PremiumObitHeaderAdContainer {
+        width: 100%; } }
+  @media only screen and (max-width: 799px) {
+    [data-responsive=true] {
+      /*
+        #PremiumObitBody.PremiumV2 .MainContentContainer .PremiumObitLayout .ServiceAndObit .PremiumObit .ObitBody .PremiumObitText .ReadMore + .PremiumObitAudioDiv {
+            width: 100%!important;
+            text-align: center!important;
+        }*/ }
+      [data-responsive=true] .RightRail {
+        margin-top: 0; }
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .ServiceInfo .ServiceInfoContent .ServiceLocation .FHLogo img {
+        margin-left: 8px; }
+      [data-responsive=true] .GuestBookMessages {
+        border-bottom: none !important; }
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .ServiceInfo .ServiceInfoContent {
+        padding-left: 16px;
+        padding-right: 16px; }
+      [data-responsive=true] #footer {
+        margin-bottom: 0; }
+      [data-responsive=true] #ctl00_MainContentPlaceholder_ReturnToObitPortalLink {
+        display: block;
+        text-align: left;
+        padding-left: 16px;
+        padding-right: 16px; }
+      [data-responsive=true] .HelpfulLinks .Content .LinkSection.Resources {
+        border-top: 1px solid #ccc;
+        padding-top: 16px; }
+      [data-responsive=true] #PremiumObitBody .MainContentContainer .PremiumObitLayout .ServiceAndObit .PremiumObit .BottomWideAdPanel,
+      [data-responsive=true] #ctl00_MainContentPlaceholder_ServiceInfoControl_Services_ctl01_ServiceItem_sadloc,
+      [data-responsive=true] .HelpfulLinks .Content .LinkSection.Resources {
+        border-bottom: 1px solid #ccc; }
+      [data-responsive=true] #PremiumObitBody .GuestBookDiv .RememberHeader .RememberText,
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .RememberHeader .RememberShareText {
+        text-align: left; }
+      [data-responsive=true] .RightRail .ClioAd .clioDiv,
+      [data-responsive=true] .RightRail .BannerAd {
+        text-align: center; }
+      [data-responsive=true] .RightRail .FHPrePlanning {
+        margin: 0 auto; }
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .ServiceInfo .ServiceInfoContent .ServiceLocation .FHPic {
+        display: inline-block;
+        margin-left: 8px; }
+      [data-responsive=true] [data-component=obits-header-links] {
+        border-bottom: 3px solid #cccccc;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-top: 1px solid #e4e1e1; }
+      [data-responsive=true] [data-component=viewAllMessagesLink] {
+        width: calc(50% - 40px);
+        max-width: 120px; }
+      [data-responsive=true] [data-component=sendFlowersHeaderLink] {
+        display: inline-block;
+        padding: 10px 10px;
+        margin-right: 10px;
+        border-radius: 5px;
+        border: 1px solid #0a94ce;
+        font-family: "Open Sans";
+        width: calc(50% - 40px);
+        max-width: 120px;
+        background-color: #0a94ce; }
+      [data-responsive=true] [data-component=sendFlowersHeaderLink] a {
+        color: #FFF; }
+      [data-responsive=true] [data-component=sendFlowersHeaderLink] .glyphicons {
+        vertical-align: baseline; }
+      [data-responsive=true] [data-component=localSpotLight] {
+        margin-bottom: 25px; }
+      [data-responsive=true] #PremiumObitBody .MainContentContainer .PremiumObitLayout .ServiceAndObit .PremiumObit {
+        margin-top: 0;
+        padding-top: 0; }
+      [data-responsive=true] [data-component=obitsLeftColumn] {
+        width: 100%; }
+      [data-responsive=true] [data-component=obitsBody] {
+        overflow: auto;
+        border-bottom: 1px solid #ccc; }
+      [data-responsive=true] [data-component=viewAllMessagesLink] a .BubbleContainer {
+        display: none; }
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .ServiceInfo .ServiceInfoContent .ServiceLocation .FHName {
+        text-align: left; }
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .MainContentContainer .PremiumObitLayout .ServiceAndObit .PremiumObit .ObitBody a.PremiumObitAudio:before {
+        content: "" !important; }
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .MainContentContainer .PremiumObitLayout .ServiceAndObit .PremiumObit .ObitBody .PremiumObitText .ReadMore {
+        display: inline-block;
+        float: left;
+        width: 40%;
+        margin-right: 10px; }
+      [data-responsive=true] #PremiumObitBody .MainContentContainer .PremiumObitLayout .ServiceAndObit .PremiumObit .ObitBody .PremiumObitAudioDiv {
+        margin-bottom: 20px;
+        float: left;
+        padding-top: 5px;
+        width: auto !important;
+        min-width: 100%; }
+      [data-responsive=true] #PremiumObitBody .MainContentContainer .PremiumObitLayout .ServiceAndObit .PremiumObit .ObitBody .PremiumObitText .ObitText {
+        min-height: 120px !important; }
+      [data-responsive=true] #PremiumObitBody .MainContentContainer .PremiumObitLayout .ServiceAndObit .PremiumObit .ObitBody .PremiumObitAudioDiv {
+        min-width: 150px !important; }
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .MainContentContainer .PremiumObitLayout .ServiceAndObit .PremiumObit .ObitBody a.PremiumObitAudio {
+        text-transform: none;
+        margin-top: 0;
+        text-decoration: underline; }
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .EnhancedObit {
+        text-align: center; }
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .PremiumObitAudioDivOnly {
+        text-align: center !important;
+        width: 100% !important;
+        float: none !important;
+        min-width: 100% !important;
+        padding: 0 !important;
+        margin-bottom: 20px; }
+      [data-responsive=true] #PremiumObitBody.PremiumV2.PremiumGannett .MainContentContainer {
+        background-color: #FFFFFF; } }
+  @media only screen and (max-width: 767px), only screen and (max-height: 340px), only screen and (device-width: 320px) and (device-height: 480px) and (orientation: landscape), only screen and (device-width: 320px) and (device-height: 568px) and (orientation: landscape), only screen and (device-width: 375px) and (device-height: 667px) and (orientation: landscape), only screen and (device-width: 414px) and (device-height: 736px) and (orientation: landscape) {
+    [data-responsive=true] #PremiumObitBody.PremiumV2 .MainContentContainer .PremiumObitLayout .ServiceAndObit .PremiumObit .ObitBody .PremiumObitText .ReadMore {
+      width: 43%;
+      text-align: right;
+      text-transform: initial !important;
+      text-decoration: underline !important;
+      margin-right: 0; }
+    [data-responsive=true] #PremiumObitBody.PremiumV2 .MainContentContainer .PremiumObitLayout .ServiceAndObit .PremiumObit .ObitBody a.PremiumObitAudio {
+      padding-left: 0; }
+    [data-responsive=true] #PremiumObitBody.PremiumV2 .MainContentContainer .PremiumObitLayout .ServiceAndObit .PremiumObit .ObitBody .ReadMoreLessMessage {
+      padding-right: 10px !important;
+      border-right: solid 1px; }
+    [data-responsive=true] #PremiumObitBody .MainContentContainer .PremiumObitLayout .ServiceAndObit .PremiumObit .ObitBody .ObitLeftColumn .ObitPhoto {
+      max-width: 140px;
+      min-height: 100px; }
+    [data-responsive=true] #PremiumObitBody .MainContentContainer .PremiumObitLayout .ServiceAndObit .PremiumObit .ObitTitle .ObituaryName .upperCaseName {
+      margin-left: 0; }
+    [data-responsive=true] #PremiumObitBody.PremiumV2 .RememberHeader .RememberText {
+      padding-top: 20px; } }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    [data-responsive=true] #PremiumObitBody.PremiumV2 .MainContentContainer .PremiumObitLayout .ServiceAndObit .PremiumObit .Divider {
+      border-bottom: none; }
+    [data-responsive=true] #PremiumObitBody.PremiumV2 .ShareContent.vertical {
+      display: block;
+      text-align: center;
+      position: relative;
+      margin-left: 0;
+      clear: both; }
+    [data-responsive=true] #ctl00_MainContentPlaceholder_PremiumObitText + [data-component="sendFlowersHeaderLink"] {
+      width: calc(100% - 50px);
+      max-width: calc(100% - 50px);
+      margin: 0 15px;
+      text-align: center;
+      margin-top: 10px; }
+    [data-responsive=true] #PremiumObitBody.PremiumV2 .ShareContent.vertical .ShareElement {
+      display: inline-table;
+      cursor: pointer;
+      margin-left: 0; }
+    [data-responsive=true] #PremiumObitBody.PremiumV2 .MainContentContainer .PremiumObitLayout .ServiceAndObit .PremiumObit .ObitBody .PremiumObitText .ReadMore {
+      width: calc(50% - 30px);
+      text-align: right;
+      text-decoration: none; }
+    [data-responsive=true] #PremiumObitBody.PremiumV2 .MainContentContainer .PremiumObitLayout .ServiceAndObit .PremiumObit .ObitBody .ReadMoreLessMessage {
+      padding-right: 10px !important;
+      border-right: solid 1px; }
+    [data-responsive=true] #ctl00_MainContentPlaceholder_AudioControl_AudioControlContainer {
+      width: calc(50% - 10px) !important;
+      margin-left: 0;
+      padding-left: 0;
+      /*max-width: 50% !important;*/
+      min-width: 0;
+      margin-top: 0px;
+      text-align: left;
+      float: none;
+      margin-bottom: 20px;
+      padding-top: 5px; }
+    [data-responsive=true] #PremiumObitBody.PremiumV2 .MainContentContainer .PremiumObitLayout .ServiceAndObit .PremiumObit .ObitBody .PremiumObitText .ReadMore {
+      margin-right: 5px; }
+    [data-responsive=true] #PremiumObitBody.PremiumV2 .MainContentContainer .PremiumObitLayout .ServiceAndObit .PremiumObit .ObitBody a.PremiumObitAudio {
+      padding-left: 0;
+      text-transform: capitalize;
+      text-decoration: underline; }
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .MainContentContainer .PremiumObitLayout .ServiceAndObit .PremiumObit .ObitBody a.PremiumObitAudio.glyphicons:before {
+        display: none; }
+    [data-responsive=true] #PremiumObitBody.PremiumV2 .ServiceInfo .ServiceInfoContent .ServiceItems,
+    [data-responsive=true] #PremiumObitBody.PremiumV2 .ServiceInfo .ServiceInfoContent .ServicesDetails {
+      background: none; }
+    [data-responsive=true] #PremiumObitBody.PremiumV2 .EnhancedObit {
+      text-align: center; }
+    [data-responsive=true] #PremiumObitBody.PremiumV2 .PremiumObitAudioDivOnly {
+      text-align: center !important;
+      width: 100% !important;
+      float: none !important;
+      min-width: 100% !important;
+      padding: 0 !important;
+      margin-bottom: 20px; } }
+  @media only screen and (max-device-width: 768px) {
+    [data-responsive=true] {
+      /* #PremiumObitBody.PremiumV2 .MainContentContainer .PremiumObitLayout .ServiceAndObit .PremiumObit .ObitTitle .ObituaryName .YearsAndNoticeTypeContainer {
+            margin-left: 7px;
+        }*/
+      /*a.SendFlowersHeaderLink.glyphicons:before { content: "" !important; }*/ }
+      [data-responsive=true] #PremiumObitBody .MainContentContainer .PremiumObitLayout .ServiceAndObit .PremiumObit .ObitTitle .ObituaryName .upperCaseName {
+        margin-left: 0 !important; }
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .ServiceInfo .ServiceInfoContent .ServiceLocation .FHPhone {
+        padding-left: 0; } }
+  @media only screen and (max-device-width: 767px) and (orientation: portrait), only screen and (max-height: 414px), only screen and (device-width: 320px) and (device-height: 480px) and (orientation: landscape), only screen and (device-width: 320px) and (device-height: 568px) and (orientation: landscape), only screen and (device-width: 375px) and (device-height: 667px) and (orientation: landscape), only screen and (device-width: 414px) and (device-height: 736px) and (orientation: landscape) {
+    [data-responsive=true] {
+      /*.HelpfulLinks .Content .LinkSection.Resources {
+            margin-bottom: 30px;
+        }*/
+      /*[data-component="obitsHeader"] {
+            float: left !important;
+            width: calc(100% - 155px);
+        }*/
+      /*#PremiumObitBody.PremiumV2 .MainContentContainer .PremiumObitLayout .ServiceAndObit .LeftColumn .LeftColumnHeader {
+            text-align: center !important;
+        }*/ }
+      [data-responsive=true] #wrapper {
+        max-width: 100% !important;
+        min-width: 320px !important; }
+      [data-responsive=true] #PremiumObitBody .MainContentContainer .PremiumObitLayout .ServiceAndObit {
+        margin-left: 0 !important;
+        width: 100%; }
+      [data-responsive=true] #ctl00_MainContentPlaceholder_PremiumObitText {
+        padding: 0 10px; }
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .RememberHeader .HeaderContent {
+        padding: 20px;
+        padding-bottom: 20px;
+        text-align: center; }
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .RememberHeader .HeaderContent .GBFlowersAd a,
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .RememberHeader .HeaderViewAll {
+        float: none !important; }
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .RememberHeader .HeaderViewAll {
+        text-align: center;
+        background: none; }
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .GuestBookMessages .AddGuestBookEntryContainer,
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .GuestBookMessages .RightMessage {
+        float: none;
+        width: 96%; }
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .GuestBookMessages .RightMessage.Half ul {
+        min-height: 25px; }
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .GuestBookMessages .ViewAllMessagesLink {
+        text-align: center;
+        margin-top: 20px; }
+        [data-responsive=true] #PremiumObitBody.PremiumV2 .GuestBookMessages .ViewAllMessagesLink .BubbleContainer {
+          display: none; }
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .MediaMessage .PhotoEntries,
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .MediaMessage .VideoEntries {
+        width: 100%;
+        padding: 0; }
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .MediaMessage .PhotoEntries .ViewAddLink,
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .MediaMessage .VideoEntries .ViewAddLink {
+        width: 97%; }
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .MediaMessage .VideoEntries {
+        margin: 0;
+        margin-top: 15px; }
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .MediaMessage .PhotoEntries {
+        text-align: center; }
+      [data-responsive=true] #ctl00_MainContentPlaceholder_NoticeType,
+      [data-responsive=true] #ctl00_MainContentPlaceholder_CondolenceLink {
+        display: none; }
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .ShareContent.vertical {
+        /*position: relative;
+            margin-left: 0;
+            text-align: center;
+            margin-bottom: 15px;*/
+        position: relative;
+        margin-left: 0;
+        text-align: center;
+        clear: both; }
+      [data-responsive=true] #PremiumObitBody .MainContentContainer .PremiumObitLayout .ServiceAndObit .PremiumObit .ObitBody {
+        padding-bottom: 20px;
+        border-bottom: 1px solid #ccc; }
+      [data-responsive=true] .HelpfulLinks .Content .LinkSection.Resources,
+      [data-responsive=true] .HelpfulLinks .Content .LinkSection.AdviceAndSupport {
+        width: 100%; }
+      [data-responsive=true] .FlowersAdContainer .LocalFlowers .headline,
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .RightRail .PlanningGuide .PlanningGuideTitleText {
+        text-align: center; }
+      [data-responsive=true] .HelpfulLinks .LinkSection ul li {
+        line-height: 30px; }
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .ReturnToPortalLink {
+        margin: 0;
+        text-align: center; }
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .ShareContent.horizontal {
+        position: relative;
+        margin: 20px 0;
+        float: none; }
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .ShareContent.vertical .ShareElement {
+        display: inline-table;
+        cursor: pointer;
+        margin-left: 0; }
+      [data-responsive=true] #PremiumObitBody .MainContentContainer .PremiumObitLayout,
+      [data-responsive=true] #PremiumObitBody .MainContentContainer .PremiumObitLayout .ServiceAndObit .LeftColumn,
+      [data-responsive=true] #PremiumObitBody .MainContentContainer .PremiumObitLayout .ServiceAndObit .PremiumObit,
+      [data-responsive=true] .RightRail,
+      [data-responsive=true] #PremiumObitBody .PremiumObitHeader .PremiumObitTitleBar {
+        float: none !important;
+        width: 100% !important;
+        box-shadow: none; }
+      [data-responsive=true] #PremiumObitBody .MainContentContainer .PremiumObitLayout .ServiceAndObit .PremiumObit .ObitBody .ObitLeftColumn {
+        float: left !important; }
+      [data-responsive=true] .ObitPhoto {
+        float: left;
+        margin-right: 8px;
+        margin-top: 6px; }
+      [data-responsive=true] #PremiumObitBody .MainContentContainer .PremiumObitLayout .ServiceAndObit .PremiumObit .ObitTitle .ObituaryName h1 {
+        font-size: 20px !important;
+        line-height: 26px !important; }
+      [data-responsive=true] #PremiumObitBody .MainContentContainer .PremiumObitLayout .ServiceAndObit .PremiumObit .ObitTitle .ObituaryName .upperCaseName {
+        margin-left: 0px; }
+      [data-responsive=true] #PremiumObitBody .MainContentContainer .PremiumObitLayout .ServiceAndObit .PremiumObit .ObitTitle .ObituaryName .upperCaseName {
+        text-transform: initial; }
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .MainContentContainer .PremiumObitLayout .ServiceAndObit .PremiumObit .ObitBody .PremiumObitText .ReadMore {
+        /*width: 36% !important;*/ }
+      [data-responsive=true] #ctl00_MainContentPlaceholder_PremiumObitText + [data-component="sendFlowersHeaderLink"] {
+        width: calc(100% - 50px);
+        max-width: calc(100% - 50px);
+        margin: 0 15px;
+        text-align: center;
+        margin-top: 10px; }
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .MainContentContainer .PremiumObitLayout .ServiceAndObit .PremiumObit .ObitBody .PremiumObitText {
+        margin: 0 !important;
+        clear: both; }
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .MainContentContainer .PremiumObitLayout .ServiceAndObit .PremiumObit .Divider {
+        display: none; }
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .MainContentContainer .PremiumObitLayout .ServiceAndObit .PremiumObit .TopBar,
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .MainContentContainer .PremiumObitLayout .ServiceAndObit .LeftColumn .TopBar {
+        display: none; }
+      [data-responsive=true] .ObituarySearchCompact #PageContent #LegacyContentContainer .SearchResults.ScrollBrowse #Listings .linksMenu {
+        margin-top: 20px; }
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .MainContentContainer .PremiumObitLayout .LeftColumnHeaderDivider {
+        border-bottom: none; }
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .ServiceInfo .ServiceInfoContent .ServiceLocation .FHName,
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .ServiceInfo .ServiceInfoContent .ServiceLocation .FHAddressInfo,
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .ServiceInfo .ServiceInfoContent .ServiceLocation .FHLinks,
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .ServiceInfo .ServiceInfoContent .ServiceLocation .FHPhone {
+        padding-left: 10px; }
+      [data-responsive=true] #ctl00_MainContentPlaceholder_ServiceInfoControl_MoreInfo,
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .ServiceInfo .ServiceInfoContent .ServicesDetails {
+        display: none; }
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .ServiceInfo .ServiceInfoContent .ServiceItems {
+        display: block !important;
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-bottom: 0;
+        border: none; }
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .ServiceInfo .ServiceInfoContent .ServiceItems .ServiceItem .ServiceType {
+        margin-bottom: 10px; }
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .ServiceInfo .ServiceInfoContent .ServiceLocation .FHPic {
+        display: inline-block;
+        margin-left: 8px; }
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .ServiceInfo .ServiceInfoContent .ServiceLocation .FHName {
+        margin-bottom: 10px; }
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .ServiceInfo .ServiceInfoContent .ServiceItems,
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .ServiceInfo .ServiceInfoContent .ServicesDetails {
+        background: none; }
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .EnhancedObit {
+        text-align: center; }
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .PremiumObitAudioDivOnly {
+        text-align: center !important;
+        width: 100% !important;
+        float: none !important;
+        min-width: 100% !important;
+        padding: 0 !important;
+        margin-bottom: 20px; }
+      [data-responsive=true] .PremiumGannett #GlobalNavigation_AffiliateFooter {
+        width: 100% !important; }
+      [data-responsive=true] .AffiliateFooter.Footer__Footer___aJ8_c {
+        height: auto !important; }
+      [data-responsive=true] .AffiliateFooter.Footer__Footer___aJ8_c .Footer__secondRow___1nPh6 .Footer_Logo {
+        width: 100%;
+        display: block;
+        text-align: center;
+        margin-bottom: 20px; }
+      [data-responsive=true] .AffiliateFooter.Footer__Footer___aJ8_c .Footer__secondRow___1nPh6 .Footer__footerRightSide___dWwvs {
+        width: 100%;
+        text-align: center;
+        display: block; }
+      [data-responsive=true] .dfpContainer {
+        text-align: center; }
+      [data-responsive=true] #ctl00_MainContentPlaceholder_HubTileDiv {
+        margin: 0 auto;
+        float: none !important; }
+      [data-responsive=true] #PremiumObitBody .MainContentContainer .PremiumObitLayout .ServiceAndObit .LeftColumn {
+        padding-top: 0; }
+      [data-responsive=true] table.FHLSHeader td {
+        width: auto !important; }
+      [data-responsive=true] #PremiumObitBody .PremiumObitHeader .PremiumObitTitleBar {
+        margin-left: 0; }
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .MainContentContainer .PremiumObitLayout .ServiceAndObit .PremiumObit .ObitTitle .ObituaryName .YearsAndNoticeTypeContainer .glyphicons.active,
+      [data-responsive=true] div#ctl00_MainContentPlaceholder_ResourcesControl_Resources,
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .MainContentContainer .PremiumObitLayout .ServiceAndObit .PremiumObit .ObitTitle .ObituaryName .YearsAndNoticeTypeContainer .PhotosLink {
+        display: none; }
+      [data-responsive=true] .RightRail .PlanningGuide {
+        padding-right: 10px !important; }
+      [data-responsive=true] .FlowersAdContainer .LocalFlowers .FlowersButtonContainer, [data-responsive=true] .RightRail .PlanningGuide .PlanningGuideButtonDiv {
+        width: 100%;
+        text-align: center;
+        margin: 15px 0; }
+      [data-responsive=true] .HelpfulLinks .Content {
+        margin: 15px 10px; }
+      [data-responsive=true] .HelpfulLinks .LinkSection.AdviceAndSupport {
+        margin: 0; }
+      [data-responsive=true] .FlowersAdContainer {
+        padding: 15px 10px; }
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .MediaMessage {
+        float: none; }
+      [data-responsive=true] .responsiveLoadingDiv {
+        border: 8px solid #f3f3f3;
+        border-top: 8px solid #3498db;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        animation: spin 2s linear infinite;
+        margin: 50px auto; }
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg); }
+      100% {
+        transform: rotate(360deg); } } }
+  @media only screen and (max-device-width: 1024px) and (min-device-width: 813px) and (orientation: landscape) {
+    [data-responsive=true] #PremiumObitBody.PremiumV2 .MainContentContainer .PremiumObitLayout .ServiceAndObit .PremiumObit .Divider {
+      border-bottom: none; }
+    [data-responsive=true] #wrapper {
+      min-width: inherit !important; }
+    [data-responsive=true] [data-component="obitsLeftColumn"] {
+      width: auto !important; }
+    [data-responsive=true] #PremiumObitBody .MainContentContainer .PremiumObitLayout .ServiceAndObit .LeftColumn {
+      width: 100%; }
+    [data-responsive=true] #PremiumObitBody.PremiumV2 .ServiceInfo .ServiceInfoContent .ServiceItems,
+    [data-responsive=true] #PremiumObitBody.PremiumV2 .ServiceInfo .ServiceInfoContent .ServicesDetails {
+      background: none; } }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    [data-responsive=true] {
+      /*
+        #PremiumObitBody .MainContentContainer .PremiumObitLayout .ServiceAndObit .LeftColumn {
+            display: none;
+        }*/
+      /*#PremiumObitBody .MainContentContainer .PremiumObitLayout .ServiceAndObit .PremiumObit .ObitBody .PremiumObitAudioDiv {
+            width: 90% !important;
+            max-width: 100% !important;
+            text-align: right;
+        }*/ }
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .ServiceInfo .ServiceInfoContent .ServiceLocation .FHPic img, [data-responsive=true] #PremiumObitBody.PremiumV2 .ServiceInfo .ServiceInfoContent .ServiceLocation .FHLogo img {
+        display: inline-block;
+        margin-left: 32px; }
+      [data-responsive=true] #PremiumObitBody .MainContentContainer .PremiumObitLayout .ObitBottomWideAd {
+        width: 590px; }
+      [data-responsive=true] #ctl00_MainContentPlaceholder_ServiceInfoControl_FuneralHomePhone {
+        margin-left: 16px; }
+      [data-responsive=true] #PremiumObitBody .ServiceInfo .ServiceInfoContent .ServiceLocation .FHPhone {
+        padding-left: 20px !important; }
+      [data-responsive=true] #PremiumObitBody .MainContentContainer .PremiumObitLayout {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0; }
+      [data-responsive=true] #PremiumObitBody .MainContentContainer .PremiumObitLayout .ServiceAndObit .LeftColumn {
+        width: 100%; }
+      [data-responsive=true] #PremiumObitBody .MainContentContainer .PremiumObitLayout .ServiceAndObit .PremiumObit .ObitTitle .ObituaryName .upperCaseName {
+        margin-left: 8px !important; }
+      [data-responsive=true] [data-component="obitsHeader"] {
+        margin-bottom: 16px; }
+      [data-responsive=true] #footer {
+        margin-bottom: 0px; }
+      [data-responsive=true] #PremiumObitBody .MainContentContainer .PremiumObitLayout .ServiceAndObit .LeftColumn {
+        padding-top: 0; }
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .MediaMessage .VideoEntries {
+        margin: 0 0 10px 0; }
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .MediaMessage .PhotoEntries .ViewAddLink, [data-responsive=true] #PremiumObitBody.PremiumV2 .MediaMessage .VideoEntries .ViewAddLink {
+        width: 100%; }
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .GuestBookMessages {
+        border-bottom: none; }
+      [data-responsive=true] #ctl00_MainContentPlaceholder_GuestBookControl_GuestBookPanel {
+        border-bottom: 1px solid #ccc;
+        margin: 0 16px; }
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .RememberHeader {
+        margin-left: -16px;
+        margin-right: -16px; }
+      [data-responsive=true] #PremiumObitBody .MainContentContainer .PremiumObitLayout .ServiceAndObit .PremiumObit .ObitBody .PremiumObitAudioDiv {
+        float: none;
+        padding-left: 3px; }
+      [data-responsive=true] #PremiumObitBody .MainContentContainer .PremiumObitLayout .ServiceAndObit {
+        margin-left: 0;
+        width: calc(100% - 340px); }
+      [data-responsive=true] [data-component="obitsLeftColumn"].ServiceAndObit {
+        width: 100% !important; }
+      [data-responsive=true] [data-component=obits-header-links] {
+        border-bottom: 3px solid #cccccc;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: #FFF;
+        border-top: 1px solid #e4e1e1; }
+      [data-responsive=true] #PremiumObitBody .MainContentContainer .PremiumObitLayout .ServiceAndObit .PremiumObit {
+        width: 100%;
+        float: left;
+        margin-left: 0 !important; }
+      [data-responsive=true] .RightRail {
+        width: 340px !important;
+        float: left !important;
+        margin-right: 0;
+        margin-top: 0;
+        overflow: hidden; }
+      [data-responsive=true] #PremiumObitBody .MainContentContainer .PremiumObitLayout .ServiceAndObit .PremiumObit {
+        margin-top: 0; }
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .RightRail .ChubTile {
+        width: 100% !important; }
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .ShareContent.vertical {
+        display: block; }
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .MainContentContainer .PremiumObitLayout .ServiceAndObit .PremiumObit .ObitBody .PremiumObitText .ReadMore {
+        text-align: left;
+        border-right: none; }
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .MainContentContainer .PremiumObitLayout .ServiceAndObit .PremiumObit .ObitBody .PremiumObitText .ReadMore {
+        float: left;
+        text-align: right; }
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .MediaMessage .PhotoEntries, [data-responsive=true] #PremiumObitBody.PremiumV2 .MediaMessage .VideoEntries {
+        text-align: center;
+        width: 100%; }
+      [data-responsive=true] .VideoEntries .VideoEntry {
+        display: inline-block;
+        float: none !important; }
+      [data-responsive=true] .ViewAddLink {
+        width: 100%; }
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .EnhancedObit {
+        text-align: center; }
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .PremiumObitAudioDivOnly {
+        text-align: center !important;
+        width: 100% !important;
+        float: none !important;
+        min-width: 100% !important;
+        padding: 0 !important;
+        margin-bottom: 20px; } }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    [data-responsive=true] {
+      /*.PremiumObitContent {
+            width: 768px;
+        }*/
+      /*#ctl00_MainContentPlaceholder_NoticeType,
+        #ctl00_MainContentPlaceholder_CondolenceLink {
+            display: none !important;
+        }*/
+      /*
+        .FlowersAdContainer {
+            padding: 0;
+        }
+        */ }
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .ServiceInfo .ServiceInfoContent .ServiceLocation {
+        padding-right: 0; }
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .ServiceInfo .ServiceInfoContent .ServiceLocation .FHPic img {
+        margin-left: 8px; }
+      [data-responsive=true] #ctl00_MainContentPlaceholder_ServiceInfoControl_ServicesDetails {
+        border-bottom: none !important; }
+      [data-responsive=true] #ctl00_MainContentPlaceholder_ResourcesControl_Resources {
+        padding: 0 16px; }
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .ServiceInfo .ServiceInfoContent .ServiceLocation .FHPic, [data-responsive=true] #PremiumObitBody.PremiumV2 .ServiceInfo .ServiceInfoContent .ServiceLocation .FHLogo img {
+        margin-left: 32px; }
+      [data-responsive=true] #ctl00_MainContentPlaceholder_GuestBookControl_GuestBookPanel {
+        border-bottom: 1px solid #ccc;
+        margin: 0 16px;
+        padding-bottom: 16px; }
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .RememberHeader {
+        margin-left: -16px;
+        margin-right: -16px; }
+      [data-responsive=true] #PremiumObitBody .MainContentContainer .PremiumObitLayout .ServiceAndObit .PremiumObit .ObitBody .PremiumObitAudioDiv {
+        padding-left: 3px; }
+      [data-responsive=true] #PremiumObitBody .MainContentContainer .PremiumObitLayout {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%; }
+      [data-responsive=true] #footer {
+        margin-bottom: 0px; }
+      [data-responsive=true] #PremiumObitBody .MainContentContainer .PremiumObitLayout .ServiceAndObit .LeftColumn {
+        width: 100%; }
+      [data-responsive=true] #PremiumObitBody .MainContentContainer .PremiumObitLayout .ServiceAndObit {
+        width: calc(100% - 340px);
+        float: left;
+        margin-left: 0 !important; }
+      [data-responsive=true] [data-component=obits-header-links] {
+        border-bottom: 3px solid #cccccc;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: #FFF;
+        border-top: 1px solid #e4e1e1; }
+      [data-responsive=true] [data-component="obitsLeftColumn"].ServiceAndObit {
+        width: 100% !important; }
+      [data-responsive=true] #PremiumObitBody .MainContentContainer .PremiumObitLayout .ServiceAndObit .PremiumObit {
+        margin-top: 0;
+        width: 100% !important; }
+      [data-responsive=true] .RightRail {
+        width: 340px !important;
+        float: left !important;
+        margin-right: 0;
+        margin-top: 0;
+        overflow: hidden; }
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .RightRail .ChubTile {
+        width: 100% !important; }
+      [data-responsive=true] #PageContentPCR .PortalContent .MainContentTable .NationalSpotlightLargeContainer .NSLargePhotoArea {
+        width: 100% !important;
+        text-align: center; }
+        [data-responsive=true] #PageContentPCR .PortalContent .MainContentTable .NationalSpotlightLargeContainer .NSLargePhotoArea table {
+          margin: 0 auto; }
+      [data-responsive=true] #PageContentPCR .PortalContent .MainContentTable .NationalSpotlightLargeContainer .NSLargePhotoArea img {
+        padding-left: 0 !important; }
+      [data-responsive=true] #PageContentPCR .NationalSpotlightLargeContainer {
+        margin-bottom: 30px; }
+      [data-responsive=true] #ctl00_ContentPlaceHolder1_ChubTile1_HtmlOverride300x100_Html .aa_Table {
+        width: 100%; }
+      [data-responsive=true] #ctl00_ContentPlaceHolder1_BottomLSDiv {
+        padding-top: 0 !important; }
+      [data-responsive=true] #ctl00_ContentPlaceHolder1_BottomLSModule_LocalSpotlightPaging {
+        width: 100% !important; }
+      [data-responsive=true] #PageContentPCR .PortalContent .LocalSpotlightContainerBase .LSInfo {
+        padding-left: 20px; }
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .MediaMessage .VideoEntries {
+        margin: 0; }
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .ShareContent.horizontal {
+        float: none;
+        margin-top: 20px;
+        text-align: center; }
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .MainContentContainer .PremiumObitLayout .ServiceAndObit .PremiumObit .ObitBody .PremiumObitText {
+        margin: 0;
+        width: auto;
+        clear: left;
+        padding: 10px 20px; }
+      [data-responsive=true] #PremiumObitBody .MainContentContainer .PremiumObitLayout .ServiceAndObit .PremiumObit .ObitBody .ObitLeftColumn .ObitPhoto {
+        margin-bottom: 0;
+        max-width: 140px;
+        min-height: 100px; }
+      [data-responsive=true] #PremiumObitBody .MainContentContainer .PremiumObitLayout .ServiceAndObit .PremiumObit .ObitTitle .ObituaryName .upperCaseName {
+        margin-left: 0 !important; }
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .ServiceInfo .ServiceInfoContent .ServiceLocation .FHPhone {
+        margin-left: 11%;
+        padding-left: 0; }
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .MainContentContainer .PremiumObitLayout .ServiceAndObit .PremiumObit .Divider {
+        display: none; }
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .MainContentContainer .PremiumObitLayout .ServiceAndObit .PremiumObit .ObitBody .PremiumObitText .ReadMore {
+        width: 43%;
+        float: left;
+        text-transform: initial !important;
+        text-decoration: underline !important; }
+      [data-responsive=true] #PremiumObitBody .MainContentContainer .PremiumObitLayout .ServiceAndObit .PremiumObit .ObitBody {
+        padding-top: 20px; }
+      [data-responsive=true] #PremiumObitBody .GuestBookDiv {
+        margin-top: 0; }
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .MainContentContainer .PremiumObitLayout .ServiceAndObit .PremiumObit .TopBar {
+        display: none; }
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .RememberHeader .RememberText {
+        text-align: center; }
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .GuestBookMessages .AddGuestBookEntryContainer {
+        width: 95%; }
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .RememberHeader .HeaderViewAll {
+        float: none;
+        width: 100px;
+        text-align: center;
+        margin: 20px auto 0px auto; }
+      [data-responsive=true] .ObitTitle.Full {
+        margin-bottom: 10px; }
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .GuestBookMessages .RightMessage {
+        float: none;
+        width: 100%; }
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .GuestBookMessages .RightMessage.Half ul {
+        min-height: 0; }
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .GuestBookMessages .ViewAllMessagesLink {
+        text-align: center;
+        margin-top: 25px; }
+      [data-responsive=true] #ctl00_MainContentPlaceholder_HelpfulLinks_HelpfulLinks {
+        display: none; }
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .MainContentContainer .PremiumObitLayout .ServiceAndObit .LeftColumn .TopBar {
+        display: none; }
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .MainContentContainer .PremiumObitLayout .ServiceAndObit .LeftColumn .LeftColumnHeader {
+        font-size: 15px;
+        border-top: solid #bebebe 1px;
+        padding-left: 0;
+        /*margin-left: 11%;*/ }
+      [data-responsive=true] #PremiumObitBody .MainContentContainer .PremiumObitLayout .ServiceAndObit .LeftColumn {
+        padding-top: 0; }
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .MainContentContainer .PremiumObitLayout .LeftColumnHeaderDivider {
+        margin-left: 0;
+        border-bottom: none; }
+      [data-responsive=true] .RightRail .RightRailWrapper,
+      [data-responsive=true] .FlowersAdContainer .LocalFlowers,
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .ServiceInfo .ServiceInfoContent,
+      [data-responsive=true] .LeftColumn .Resources,
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .RightRail .ChubTile {
+        background: #ebebeb !important;
+        background-color: #ebebeb !important; }
+      [data-responsive=true] .FlowersAdContainer .LocalFlowers .headline {
+        padding: 15px; }
+      [data-responsive=true] .FlowersAdContainer .LocalFlowers .flowersImage {
+        margin-left: 15px; }
+      [data-responsive=true] .FlowersAdContainer .LocalFlowers .subtext2 {
+        padding: 0 15px 15px 15px;
+        width: auto; }
+      [data-responsive=true] .FlowersAdContainer .LocalFlowers .FlowersButtonContainer {
+        margin-left: 33px; }
+      [data-responsive=true] #PremiumObitBody .MainContentContainer .PremiumObitLayout .ServiceAndObit .PremiumObit .ObitBody .PremiumObitText .ObitText {
+        min-height: 95px; }
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .GuestBookMessages .AddGuestBookEntryContainer .GuestBookEntryButton {
+        width: 96%; }
+      [data-responsive=true] #PremiumObitBody.PremiumV2 .MediaMessage .PhotoEntries, [data-responsive=true] #PremiumObitBody.PremiumV2 .MediaMessage .VideoEntries {
+        text-align: center;
+        width: 100%; }
+      [data-responsive=true] .VideoEntries .VideoEntry {
+        display: inline-block;
+        float: none !important; }
+      [data-responsive=true] .ViewAddLink {
+        width: 97%; } }
+  @media only screen and (min-width: 800px) {
+    [data-responsive=true] #ctl00_MainContentPlaceholder_PremiumObitAudioDiv {
+      width: calc(50% + 15px) !important;
+      margin-top: 5px; }
+    [data-responsive=true] #ctl00_MainContentPlaceholder_AudioControl_AudioControlContainer {
+      width: 100% !important; } }
+  @media only screen and (max-device-width: 812px) and (max-device-height: 414px) and (orientation: landscape), only screen and (device-width: 320px) and (device-height: 480px) and (orientation: landscape), only screen and (device-width: 320px) and (device-height: 568px) and (orientation: landscape), only screen and (device-width: 375px) and (device-height: 667px) and (orientation: landscape), only screen and (device-width: 414px) and (device-height: 736px) and (orientation: landscape) {
+    [data-responsive=true] #PremiumObitBody .MainContentContainer .PremiumObitLayout .ServiceAndObit .PremiumObit .ObitTitle .ObituaryName .upperCaseName {
+      margin-left: 8px !important; }
+    [data-responsive=true] #PremiumObitBody.PremiumV2 .ServiceInfo .ServiceInfoContent .ServiceLocation .FHLogo img {
+      margin-left: 8px; }
+    [data-responsive=true] #PremiumObitBody .MainContentContainer .PremiumObitLayout,
+    [data-responsive=true] #PremiumObitBody .MainContentContainer .PremiumObitLayout .ServiceAndObit .LeftColumn,
+    [data-responsive=true] #PremiumObitBody .MainContentContainer .PremiumObitLayout .ServiceAndObit .PremiumObit,
+    [data-responsive=true] .RightRail,
+    [data-responsive=true] #PremiumObitBody .PremiumObitHeader .PremiumObitTitleBar {
+      float: none !important;
+      width: 100% !important;
+      box-shadow: none; }
+    [data-responsive=true] #footer {
+      margin-bottom: 0; }
+    [data-responsive=true] #PremiumObitBody.PremiumV2 .ServiceInfo .ServiceInfoContent .ServiceLocation .FHPic {
+      display: inline-block;
+      margin-left: 8px; }
+    [data-responsive=true] #PremiumObitBody .MainContentContainer .PremiumObitLayout .ServiceAndObit .PremiumObit .BottomWideAdPanel,
+    [data-responsive=true] #ctl00_MainContentPlaceholder_ServiceInfoControl_Services_ctl01_ServiceItem_sadloc {
+      border-bottom: 1px solid #ccc; }
+    [data-responsive=true] #PremiumObitBody .GuestBookDiv .RememberHeader .RememberText,
+    [data-responsive=true] #PremiumObitBody.PremiumV2 .RememberHeader .RememberShareText {
+      text-align: left; }
+    [data-responsive=true] .RightRail .ClioAd .clioDiv,
+    [data-responsive=true] .RightRail .BannerAd {
+      text-align: center; }
+    [data-responsive=true] .RightRail .FHPrePlanning {
+      margin: 0 auto; }
+    [data-responsive=true] .RightRail {
+      margin-top: 0;
+      margin-right: 10px;
+      right: 0; }
+    [data-responsive=true] #PremiumObitBody .MainContentContainer .PremiumObitLayout .ServiceAndObit {
+      margin-left: 0 !important; }
+    [data-responsive=true] #PremiumObitBody .MainContentContainer .PremiumObitLayout .ServiceAndObit .LeftColumn {
+      padding-top: 0px; }
+    [data-responsive=true] a.SendFlowersHeaderLink.glyphicons:before {
+      content: "" !important; }
+    [data-responsive=true] #ctl00_AffiliateHeaderSmall_AffiliateHeaderSmall {
+      width: calc(100% - 10px); }
+    [data-responsive=true] .ObitBody [data-component=sendFlowersHeaderLink] {
+      margin: 0 15px;
+      width: calc(100% - 50px);
+      max-width: calc(100% - 50px);
+      display: inline-block;
+      text-align: center; } }
+
+@media only screen and (max-width: 799px) {
+  #PremiumObitBody .PremiumObitHeader .PremiumObitTitleBar {
+    display: none !important; }
+  #PremiumObitBody .PremiumObitHeader .AffiliateHeaderContent {
+    display: none !important; }
+  #PremiumObitBody .PremiumObitHeader .AffiliateHeaderSmall {
+    display: block !important; }
+  #UniversalNavSmall {
+    display: block !important; }
+  #GlobalNavigation_Header {
+    display: none !important; } }
